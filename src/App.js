@@ -8,9 +8,11 @@ export default function App() {
   const [error, setError] = useState("");
 
   const billHanlder = (e) => {
+    setNoOfNotes([])
     setBillAmount(e.target.value);
   };
   const cashHandler = (e) => {
+    setNoOfNotes([])
     setCashGiven(e.target.value);
   };
   const denomination = [2000, 500, 100, 20, 10, 5, 1];
